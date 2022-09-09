@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Auchentoshan American Oak Single Malt",
+        "abv":"40%",
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 1
+    },
+    {
+        "name": "Auchentoshan Three Wood",
+        "abv":"43%",
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask, PX Sherry Cask",
+        "distillery_id": 1
+    },
+    {
+        "name": "Auchentoshan 18 Year",
+        "abv":"43%",
+        "age":"18 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 1
+    },
+    {
+        "name": "Auchentoshan 12 Year",
+        "abv":"40%",
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 1
+    },
+    {
+        "name": "BenRiach Horizons",
+        "abv":"50%",
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 2
+    },
+    {
+        "name": "BenRiach Curiositas",
+        "abv":"45%",
+        "age":"10 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 2
+    },
+    {
+        "name": "BenRiach Peated 10 Year",
+        "abv":"43%",
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 2
+    },
+    {
+        "name": "BenRiach 2000 Oloroso Sherry 12 Year",
+        "abv":"57.1",
+        "age":"12 Years",
+        "wood":"Oloroso Sherry Cask",
+        "distillery_id": 2
+    },
+    {
+        "name": "Bowmore 12 Year",
+        "abv":"40%",
+        "age":"12 Yeasr",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore 15 Year",
+        "abv":"43%",
+        "age":"15 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore 18 Year",
+        "abv":"43%",
+        "age":"18 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore 25 Year",
+        "abv":"43%",
+        "age":"25 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore Chateau Lagrange 21 Year Old",
+        "abv":"48.4%",
+        "age":"21 years",
+        "wood":"French Oak Barrels",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore Timeless 27 Year Old",
+        "abv":"52.7%",
+        "age":"27 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks, First-Fill Oloroso Sherry Casks",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore Timeless 31 Year Old",
+        "abv":"45.4%",
+        "age":"31 Years",
+        "wood":"Used Bourbon Barrels, Spanish Oak Matusalem Sherry Casks",
+        "distillery_id": 3
+    },
+    {
+        "name": "Bowmore Mizunara Cask Finish",
+        "abv":"53.9%",
+        "age":"No Age Statements",
+        "wood":"Used Bourbon Barrels, Mizunara Oak",
+        "distillery_id": 3
+    }
+]

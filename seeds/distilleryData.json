@@ -1,13 +1,16 @@
 [
     {
+        "id": 1,
         "name": "Auchentoshan",
         "location": "Lowland"
     },
     {
+        "id": 2,
         "name": "BenRiach",
         "email": "Speyside"
     },
     {
+        "id": 3,
         "name": "Bowmore",
         "location": "Islay"
     },
