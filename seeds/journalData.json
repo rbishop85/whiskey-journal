@@ -1,15 +1,18 @@
 [
     {
+        "id": 1,
         "color":"", 
-        "winey":"",
-        "woody":"",
-        "sulphury":"",
-        "feinty":"",
-        "peaty":"",
-        "floral":"",
-        "malty":"",
-        "notes":"",
-        "rating":""
-
+        "winey":,
+        "woody":,
+        "sulphury":,
+        "feinty":,
+        "peaty":,
+        "floral":,
+        "malty":,
+        "notes":,
+        "rating":,
+        "distillery_id":,
+        "expression_id":,
+        "user_id":
     }
 ]
