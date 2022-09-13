@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "color":"mahagony", 
+        "winey": 3,
+        "woody": 8,
+        "sulphury": 1,
+        "feinty": 3,
+        "peaty": 2,
+        "floral": 5,
+        "malty": 6,
+        "notes": "Heavy oak notes. Not a lot else going on, but overall a pleasant whisky. ",
+        "rating": 3,
+        "distillery_id": 1,
+        "expression_id": 1,
+        "user_id": 3
+    }
+]

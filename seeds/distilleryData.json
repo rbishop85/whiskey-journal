@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "name": "Auchentoshan",
+        "location": "Lowland"
+    },
+    {
+        "id": 2,
+        "name": "BenRiach",
+        "email": "Speyside"
+    },
+    {
+        "id": 3,
+        "name": "Bowmore",
+        "location": "Islay"
+    },
+    {
+        "id": 4,
+        "name": "Bruichladdich",
+        "email": "Islay"
+    },
+    {
+        "id": 5,
+        "name": "Caol Ila",
+        "location": "Islay"
+    },
+    {
+        "id": 6,
+        "name": "Clynelish",
+        "email": "Highland"
+    },
+    {
+        "id": 7,
+        "name": "Cragganmore",
+        "location": "Speyside"
+    },
+    {
+        "id": 8,
+        "name": "Dalmore",
+        "email": "Highland"
+    },
+    {
+        "id": 9,
+        "name": "Edradour",
+        "location": "Highland"
+    },
+    {
+        "id": 10,
+        "name": "GlenGrant",
+        "email": "Speyside"
+    },
+    {
+        "id": 11,
+        "name": "Glenfiddich",
+        "location": "Speyside"
+    },
+    {
+        "id": 12,
+        "name": "Glenlivet",
+        "email": "Speyside"
+    },
+    {
+        "id": 13,
+        "name": "Glenrothes",
+        "location": "Speyside"
+    },
+    {
+        "id": 14,
+        "name": "Lagavulin",
+        "email": "Islay"
+    },
+    {
+        "id": 15,
+        "name": "Laphroaig",
+        "location": "Islay"
+    },
+    {
+        "id": 16,
+        "name": "Longmorn",
+        "email": "Speyside"
+    },
+    {
+        "id": 17,
+        "name": "Cragganmore",
+        "location": "Speyside"
+    },
+    {
+        "id": 18,
+        "name": "Macallan",
+        "email": "Speyside"
+    },
+    {
+        "id": 19,
+        "name": "Mortlach",
+        "location": "Dufftown"
+    },
+    {
+        "id": 20,
+        "name": "Springbank",
+        "email": "Campbeltown"
+    },
+    
+]
