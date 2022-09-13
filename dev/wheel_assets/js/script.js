@@ -1,3 +1,5 @@
+// Doughnut Chart
+
 const data = {
   labels: [
     "Floral",
@@ -32,5 +34,13 @@ const config = {
   type: "doughnut",
   data: data,
 };
+
+// Polar Area Chart
+
+// const config = {
+//   type: 'polarArea',
+//   data: data,
+//   options: {}
+// };
 
 const myChart = new Chart(document.getElementById("myChart"), config);
