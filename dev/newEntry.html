@@ -11,9 +11,9 @@
 
 
 
-<body>
+<body class="justify-content-center">
 
-  <div class="card text-center">
+  <div class="card text-center col-10">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
@@ -26,33 +26,57 @@
     </div>
     <div class="card-body">
       <h5 class="card-title">My Whisky Journal</h5>
-      <p class="card-text">INSERT DROP-DOWNS HERE</p>
+      <div class="row justify-content-center">
+        <div class="dropdown show">
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="distilleryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Distillery:
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      
+        <div class="dropdown show">
+          <a class="btn btn-primary dropdown-toggle disabled" href="#" role="button" id="expressionDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Expression:
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
       <p class="card-text">Color (Dark to Light -- Choose One)</p>
       <div class="container">
         <div class="row ms-3">
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="Mahogany-radio" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">Mahogany</label>
+            <input class="form-check-input" type="radio" name="colorRadios" id="mahogany-radio" value="option1" checked>
+            <label class="form-check-label" for="mahogany-radio">Mahogany</label>
           </div>
           <div class="form-check col-2">
             <input class="form-check-input" type="radio" name="colorRadios" id="caramel-radio" value="option2">
-            <label class="form-check-label" for="exampleRadios2">Caramel</label>
+            <label class="form-check-label" for="caramel-radio">Caramel</label>
           </div>
           <div class="form-check col-2">
             <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3" checked>
-            <label class="form-check-label" for="exampleRadios3">Amber</label>
+            <label class="form-check-label" for="amber-radio">Amber</label>
           </div>
           <div class="form-check col-2">
             <input class="form-check-input" type="radio" name="colorRadios" id="gold-radio" value="option4">
-            <label class="form-check-label" for="exampleRadios4">Gold</label>
+            <label class="form-check-label" for="gold-radio">Gold</label>
           </div>
           <div class="form-check col-2">
             <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5" checked>
-            <label class="form-check-label" for="exampleRadios5">Honey</label>
+            <label class="form-check-label" for="honey-radio">Honey</label>
           </div>
           <div class="form-check col-2">
             <input class="form-check-input" type="radio" name="colorRadios" id="straw-radio" value="option6">
-            <label class="form-check-label" for="exampleRadios6">Straw</label>
+            <label class="form-check-label" for="straw-radio">Straw</label>
           </div>
         </div>
       </div>
