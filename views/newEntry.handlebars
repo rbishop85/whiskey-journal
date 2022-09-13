@@ -1,15 +1,5 @@
 <div class="container" >
   <div class="card text-center col-10">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
     <div class="card-body">
       <h5 class="card-title">My Whisky Journal</h5>
       <div class="row justify-content-center">
@@ -45,7 +35,7 @@
             <label class="form-check-label" for="caramel-radio">Caramel</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3" checked>
+            <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3">
             <label class="form-check-label" for="amber-radio">Amber</label>
           </div>
           <div class="form-check col-2">
@@ -53,7 +43,7 @@
             <label class="form-check-label" for="gold-radio">Gold</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5" checked>
+            <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5">
             <label class="form-check-label" for="honey-radio">Honey</label>
           </div>
           <div class="form-check col-2">
@@ -111,6 +101,17 @@
             <input type="range" class="form-control-range" min="0" max="10" id="maltyRange" onInput="$('#maltyrangeval').html($(this).val())">
             <span id="maltyrangeval">5</span>
           </div>
+
+        </div>
+        <div class="col-12 form-group">
+          <label for="exampleFormControlTextarea1">Notes:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12 form-group">
+          
+          <label for="overallRange">Overall rating</label>
+          <input type="range" class="form-control-range" min="1" max="5" id="overallRange" onInput="$('#overallrangeval').html($(this).val())">
+          <span id="overallrangeval">3</span>
         </div>
         <a href="#" class="btn btn-primary">Submit</a>
       </form>

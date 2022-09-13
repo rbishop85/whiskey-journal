@@ -6,131 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style.css">
     <title>Whiskey Journal</title>
 </head>
 
 
 
-<body class="justify-content-center" style="background-image: url('background.jpg');">
-<div class="container" >
-  <div class="card text-center col-10">
-    <div class="card-header">
-      <ul class="nav nav-tabs card-header-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">My Whisky Journal</h5>
-      <div class="row justify-content-center">
-        <div class="dropdown show">
-          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="distilleryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Distillery:</a>
-          <div class="dropdown-menu" aria-labelledby="distilleryDropdownMenu">
-            <a class="dropdown-item" href="#">Auchentoshan</a>
-            <a class="dropdown-item" href="#">BenRiach</a>
-            <a class="dropdown-item" href="#">Bowmore</a>
-            <a class="dropdown-item" href="#">etc...</a>
+<body class="justify-content-center">
+  <nav class="navbar sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Whiskey Journal</a>
+  </nav>
+
+  <!-- newEntry.handlebars begins here! -->
+  <div class="container" >
+    <div class="card text-center col-10">
+      <div class="card-body">
+        <h5 class="card-title">My Whisky Journal</h5>
+        <div class="row justify-content-center">
+          <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="distilleryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Distillery:</a>
+            <div class="dropdown-menu" aria-labelledby="distilleryDropdownMenu">
+              <a class="dropdown-item" href="#">Auchentoshan</a>
+              <a class="dropdown-item" href="#">BenRiach</a>
+              <a class="dropdown-item" href="#">Bowmore</a>
+              <a class="dropdown-item" href="#">etc...</a>
+            </div>
+          </div>
+        
+          <div class="dropdown show">
+            <a class="btn btn-primary dropdown-toggle disabled" href="#" role="button" id="expressionDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Expression:</a>
+            <div class="dropdown-menu" aria-labelledby="expressionDropdownMenu">
+              <a class="dropdown-item" href="#">expression1</a>
+              <a class="dropdown-item" href="#">expression2</a>
+              <a class="dropdown-item" href="#">expression3</a>
+              <a class="dropdown-item" href="#">etc...</a>
+            </div>
           </div>
         </div>
-      
-        <div class="dropdown show">
-          <a class="btn btn-primary dropdown-toggle disabled" href="#" role="button" id="expressionDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Expression:</a>
-          <div class="dropdown-menu" aria-labelledby="expressionDropdownMenu">
-            <a class="dropdown-item" href="#">expression1</a>
-            <a class="dropdown-item" href="#">expression2</a>
-            <a class="dropdown-item" href="#">expression3</a>
-            <a class="dropdown-item" href="#">etc...</a>
+        <p class="card-text">Color (Dark to Light)</p>
+        <div class="container">
+          <div class="row ms-3">
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="mahogany-radio" value="option1" checked>
+              <label class="form-check-label" for="mahogany-radio">Mahogany</label>
+            </div>
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="caramel-radio" value="option2">
+              <label class="form-check-label" for="caramel-radio">Caramel</label>
+            </div>
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3">
+              <label class="form-check-label" for="amber-radio">Amber</label>
+            </div>
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="gold-radio" value="option4">
+              <label class="form-check-label" for="gold-radio">Gold</label>
+            </div>
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5">
+              <label class="form-check-label" for="honey-radio">Honey</label>
+            </div>
+            <div class="form-check col-2 col-s-6">
+              <input class="form-check-input" type="radio" name="colorRadios" id="straw-radio" value="option6">
+              <label class="form-check-label" for="straw-radio">Straw</label>
+            </div>
           </div>
         </div>
+        <p class="card-text">Flavor Prominence (1 - 10)</p>
+        <form>
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="wineyRange">Winey (sherry, nutty, chocolate, oily</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="wineyRange" onInput="$('#wineyrangeval').html($(this).val())">
+              <span id="wineyrangeval">5</span>
+            </div>
+            <div class="col-6 form-group">
+              <label for="peatyRange">Peaty (medicinal, smokey,salty, mossy</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="peatyRange" onInput="$('#peatyrangeval').html($(this).val())">
+              <span id="peatyrangeval">5</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="woodyRange">Woody (new wood, old wood, vanilla, toasted)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="woodyRange" onInput="$('#woodyrangeval').html($(this).val())">
+              <span id="woodyrangeval">5</span>
+            </div>
+            <div class="col-6 form-group">
+              <label for="floralRange">Floral(fragrant, leafy, hay-like, flowers)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="floralRange" onInput="$('#floralrangeval').html($(this).val())">
+              <span id="floralrangeval">5</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="sulphuryRange">Sulphury (vegetal, coal, rubbery, sandy)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="sulphuryRange" onInput="$('#sulphuryrangeval').html($(this).val())">
+              <span id="sulphuryrangeval">5</span>
+            </div>
+            <div class="col-6 form-group">
+              <label for="fruityRange">Fruity (citrus, fresh fruit, cooked fruit, dried fruit)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="fruityRange" onInput="$('#fruityrangeval').html($(this).val())">
+              <span id="fruityrangeval">5</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 form-group">
+              <label for="feintyRange">Feinty (plastic, sweaty, tobacco, leather, honey)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="feintyRange" onInput="$('#feintyrangeval').html($(this).val())">
+              <span id="feintyrangeval">5</span>
+            </div>
+            <div class="col-6 form-group">
+              <label for="maltyRange">Malty (cereal, yeasty, starchy)</label>
+              <input type="range" class="form-control-range" min="0" max="10" id="maltyRange" onInput="$('#maltyrangeval').html($(this).val())">
+              <span id="maltyrangeval">5</span>
+            </div>
+  
+          </div>
+          <div class="col-12 form-group">
+            <label for="exampleFormControlTextarea1">Notes:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="col-12 form-group">
+            
+            <label for="overallRange">Overall <i class="material-icons">star</i> rating</label>
+            <input type="range" class="form-control-range" min="1" max="5" id="overallRange" onInput="$('#overallrangeval').html($(this).val())">
+            <span id="overallrangeval">3</span>
+          </div>
+          <a href="#" class="btn btn-primary">Submit</a>
+        </form>
       </div>
-      <p class="card-text">Color (Dark to Light -- Choose One)</p>
-      <div class="container">
-        <div class="row ms-3">
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="mahogany-radio" value="option1" checked>
-            <label class="form-check-label" for="mahogany-radio">Mahogany</label>
-          </div>
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="caramel-radio" value="option2">
-            <label class="form-check-label" for="caramel-radio">Caramel</label>
-          </div>
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3" checked>
-            <label class="form-check-label" for="amber-radio">Amber</label>
-          </div>
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="gold-radio" value="option4">
-            <label class="form-check-label" for="gold-radio">Gold</label>
-          </div>
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5" checked>
-            <label class="form-check-label" for="honey-radio">Honey</label>
-          </div>
-          <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="straw-radio" value="option6">
-            <label class="form-check-label" for="straw-radio">Straw</label>
-          </div>
-        </div>
-      </div>
-      <p class="card-text">Flavor Prominence (1 - 10)</p>
-      <form>
-        <div class="row">
-          <div class="col-6 form-group">
-            <label for="wineyRange">Winey (sherry, nutty, chocolate, oily</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="wineyRange" onInput="$('#wineyrangeval').html($(this).val())">
-            <span id="wineyrangeval">5</span>
-          </div>
-          <div class="col-6 form-group">
-            <label for="peatyRange">Peaty (medicinal, smokey,salty, mossy</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="peatyRange" onInput="$('#peatyrangeval').html($(this).val())">
-            <span id="peatyrangeval">5</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 form-group">
-            <label for="woodyRange">Woody (new wood, old wood, vanilla, toasted)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="woodyRange" onInput="$('#woodyrangeval').html($(this).val())">
-            <span id="woodyrangeval">5</span>
-          </div>
-          <div class="col-6 form-group">
-            <label for="floralRange">Floral(fragrant, leafy, hay-like, flowers)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="floralRange" onInput="$('#floralrangeval').html($(this).val())">
-            <span id="floralrangeval">5</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 form-group">
-            <label for="sulphuryRange">Sulphury (vegetal, coal, rubbery, sandy)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="sulphuryRange" onInput="$('#sulphuryrangeval').html($(this).val())">
-            <span id="sulphuryrangeval">5</span>
-          </div>
-          <div class="col-6 form-group">
-            <label for="fruityRange">Fruity (citrus, fresh fruit, cooked fruit, dried fruit)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="fruityRange" onInput="$('#fruityrangeval').html($(this).val())">
-            <span id="fruityrangeval">5</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 form-group">
-            <label for="feintyRange">Feinty (plastic, sweaty, tobacco, leather, honey)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="feintyRange" onInput="$('#feintyrangeval').html($(this).val())">
-            <span id="feintyrangeval">5</span>
-          </div>
-          <div class="col-6 form-group">
-            <label for="maltyRange">Malty (cereal, yeasty, starchy)</label>
-            <input type="range" class="form-control-range" min="0" max="10" id="maltyRange" onInput="$('#maltyrangeval').html($(this).val())">
-            <span id="maltyrangeval">5</span>
-          </div>
-        </div>
-        <a href="#" class="btn btn-primary">Submit</a>
-      </form>
     </div>
   </div>
-</div>
+<!-- newEntry.handlebars Ends here! -->
     <!-- Bootstrap Links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
