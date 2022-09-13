@@ -14,6 +14,8 @@ router.get('/', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
+    console.log(user);
+
     res.render('homepage', {
       ...user,
       logged_in: true
@@ -33,7 +35,7 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/journal/:id', async (req, res) => {
+router.get('/journal/:id', withAuth, async (req, res) => {
   try {
     const journalData = await Journal.findByPk(req.params.id, {
       include: [
@@ -55,11 +57,20 @@ router.get('/journal/:id', async (req, res) => {
   }
 });
 
-router.get('/journal/new', (req, res) => {
-  // If a session exists, redirect the request to the homepage
- 
+router.get('/journal/new', withAuth, async (req, res) => {
+  try {
+    const distilleryData = await Distillery.findAll();
 
-  res.render('newEntry');
+    const distilleries = distilleryData.map((distillery) => distillery.get({ plain: true }));
+
+    res.render('newEntry', { 
+      distilleries, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+ 
 });
 
 module.exports = router;
