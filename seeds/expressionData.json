@@ -217,18 +217,18 @@
     },
     {
         "id": 28,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Edradour 10 Year",
+        "abv": 40.0,
+        "age":"10 Years",
+        "wood":"Used Bourbon Barrels",
         "distillery_id": 9
     },
     {
         "id": 29,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Edradour Vintage Bourdeaux Cask Finish",
+        "abv": 55.8,
+        "age":"22 Years",
+        "wood":"Used Bourbon Hogshead Barrels, Cabernet Wine Hogshead Barrels, ",
         "distillery_id": 9
     },
     {
