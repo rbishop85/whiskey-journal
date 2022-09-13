@@ -153,34 +153,34 @@
     },
     {
         "id": 20,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Caol Ila 12 Year Old",
+        "abv": 43.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels",
         "distillery_id": 5
     },
     {
         "id": 21,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Coal Ila 11 Year Old Whisky Exchange Exclusive",
+        "abv": 58.2,
+        "age":"11 Years",
+        "wood":"Single Refill Sherry Cask",
         "distillery_id": 5
     },
     {
         "id": 22,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Clynelish 14 Year Old",
+        "abv": 46.0,
+        "age":"14 Years",
+        "wood":"Used Bourbon Barrels",
         "distillery_id": 6
     },
     {
         "id": 23,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Clynelish 14 Year Old Flora & Fauna Release",
+        "abv": 43.0,
+        "age":"14 Years",
+        "wood":"American Oak, Oloroso Seco Casks",
         "distillery_id": 6
     },
     {
