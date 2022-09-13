@@ -185,34 +185,34 @@
     },
     {
         "id": 24,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Cragganmore 12 Year",
+        "abv":40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels",
         "distillery_id": 7
     },
     {
         "id": 25,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Cragganmore 2021 Distillers Edition",
+        "abv":40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Used Port Wine Casks",
         "distillery_id": 7
     },
     {
         "id": 26,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Dalmore 12 Year",
+        "abv": 40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Spanish Oak Matusalem Sherry Casks",
         "distillery_id": 8
     },
     {
         "id": 27,
-        "name": "",
-        "abv":,
-        "age":"",
-        "wood":"",
+        "name": "Dalmore Cigar Malt",
+        "abv": 44.0,
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels, Spanish Oak Matusalem Sherry Casks, Cabernet Wine Barrels",
         "distillery_id": 8
     },
     {
