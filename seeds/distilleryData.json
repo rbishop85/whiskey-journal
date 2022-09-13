@@ -81,21 +81,16 @@
     },
     {
         "id": 17,
-        "name": "Cragganmore",
-        "location": "Speyside"
-    },
-    {
-        "id": 18,
         "name": "Macallan",
         "location": "Speyside"
     },
     {
-        "id": 19,
+        "id": 18,
         "name": "Mortlach",
         "location": "Dufftown"
     },
     {
-        "id": 20,
+        "id": 19,
         "name": "Springbank",
         "location": "Campbeltown"
     }

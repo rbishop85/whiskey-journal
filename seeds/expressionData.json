@@ -182,6 +182,213 @@
         "age":"14 Years",
         "wood":"American Oak, Oloroso Seco Casks",
         "distillery_id": 6
-    }
-    
+    },
+    {
+        "id": 24,
+        "name": "Cragganmore 12 Year",
+        "abv":40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 7
+    },
+    {
+        "id": 25,
+        "name": "Cragganmore 2021 Distillers Edition",
+        "abv":40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Used Port Wine Casks",
+        "distillery_id": 7
+    },
+    {
+        "id": 26,
+        "name": "Dalmore 12 Year",
+        "abv": 40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Spanish Oak Matusalem Sherry Casks",
+        "distillery_id": 8
+    },
+    {
+        "id": 27,
+        "name": "Dalmore Cigar Malt",
+        "abv": 44.0,
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels, Spanish Oak Matusalem Sherry Casks, Cabernet Wine Barrels",
+        "distillery_id": 8
+    },
+    {
+        "id": 28,
+        "name": "Edradour 10 Year",
+        "abv": 40.0,
+        "age":"10 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 9
+    },
+    {
+        "id": 29,
+        "name": "Edradour Vintage Bourdeaux Cask Finish",
+        "abv": 55.8,
+        "age":"22 Years",
+        "wood":"Used Bourbon Hogshead Barrels, Cabernet Wine Hogshead Barrels, ",
+        "distillery_id": 9
+    },
+    {
+        "id": 30,
+        "name": "Glen Grant Arboralis",
+        "abv": 40,
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks",
+        "distillery_id": 10
+    },
+    {
+        "id": 31,
+        "name": "Glen Grant 18 Year Old",
+        "abv": 43.0,
+        "age":"18 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 10
+    },
+    {
+        "id": 32,
+        "name": "Glenfiddich Rick Oak",
+        "abv": 40.0,
+        "age":"14 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask, Virgin European Oak",
+        "distillery_id": 11
+    },
+    {
+        "id": 33,
+        "name": "Glenfiddich Solera Reserve",
+        "abv": 40.0,
+        "age":"15 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks",
+        "distillery_id": 11
+    },
+    {
+        "id": 34,
+        "name": "Glenlivet French Oak Reserve",
+        "abv": 40.0,
+        "age":"15 Years",
+        "wood":"Used Bourbon Barrels, French Limousine Oak",
+        "distillery_id": 12
+    },
+    {
+        "id": 35,
+        "name": "Glenlivet Captain's Reserve",
+        "abv": 40.0,
+        "age":"No Age Statement",
+        "wood":"American Sherry Casks, French Cognac Casks",
+        "distillery_id": 12
+    },
+    {
+        "id": 36,
+        "name": "Glenrothes Alba Reserve",
+        "abv": 40.0,
+        "age":"No Age Statement",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 13
+    },
+    {
+        "id": 37,
+        "name": "Glenrothes 1991",
+        "abv": 43.0,
+        "age":"20 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 13
+    },
+    {
+        "id": 38,
+        "name": "Lagavulin 16 Year",
+        "abv": 43.0,
+        "age":"16 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks",
+        "distillery_id": 14
+    },
+    {
+        "id": 39,
+        "name": "Lagavulin Limited Release Guiness Cask",
+        "abv": 46.0,
+        "age":"11 Years",
+        "wood":"Used Bourbon Barrels, Guiness Beer Casks",
+        "distillery_id": 14
+    },
+    {
+        "id": 40,
+        "name": "Laphroaig Triple Wood",
+        "abv": 48.0,
+        "age":"10 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks, Quarter Casks",
+        "distillery_id": 15
+    },
+    {
+        "id": 41,
+        "name": "Laphroaig Cairdeas",
+        "abv": 51.8,
+        "age": "No Age Statement",
+        "wood": "Used Bourbon Barrels, Fino Sherry Casks",
+        "distillery_id": 15
+    },
+    {
+        "id": 42,
+        "name": "Longmorn 16 Year",
+        "abv": 48.0,
+        "age":"16 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 16
+    },
+    {
+        "id": 43,
+        "name": "Longmorn 1996",
+        "abv": 60.1,
+        "age":"17 Years",
+        "wood":"Spanish Sherry Casks",
+        "distillery_id": 16
+    },
+    {
+        "id": 44,
+        "name": "Macallen Triple Cask",
+        "abv": 40.0,
+        "age":"12 Years",
+        "wood":"Used Bourbon Barrels, Oloroso Sherry Cask",
+        "distillery_id": 17
+    },
+    {
+        "id": 45,
+        "name": "Macallen Fine Oak",
+        "abv": 43.0,
+        "age":"18 Years",
+        "wood":"Used Bourbon Barrels, Spansih Sherry Casks",
+        "distillery_id": 17
+    },
+    {
+        "id": 46,
+        "name": "Mortlach Distiller's Dram",
+        "abv": 43.4,
+        "age":"16 Years",
+        "wood":"Spanish Sherry Casks",
+        "distillery_id": 18
+    },
+    {
+        "id": 47,
+        "name": "Mortlach Limited 15 Year",
+        "abv": 43.0,
+        "age":"15 Years",
+        "wood":"Oloroso Sherry Cask",
+        "distillery_id": 18
+    },
+    {
+        "id": 48,
+        "name": "Springbank 15 Year",
+        "abv": 46.0,
+        "age":"15 Years",
+        "wood":"Used Bourbon Barrels",
+        "distillery_id": 19
+    },
+    {
+        "id": 49,
+        "name": "Springbank 2004 Gaja Barolo Finish",
+        "abv": 54.7,
+        "age":"9 Years",
+        "wood":"Used Bourbon Barrels, Gaja Barolo Wine Casks",
+        "distillery_id": 19
+    }   
 ]
