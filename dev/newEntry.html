@@ -14,13 +14,13 @@
 
 
 <body class="justify-content-center">
-  <nav class="navbar sticky-top navbar-dark bg-dark mb-5">
+  <!-- <nav class="navbar sticky-top navbar-dark bg-dark mb-5">
     <a class="navbar-brand" href="#">Whiskey Journal</a>
-  </nav>
+  </nav> -->
 
   <!-- newEntry.handlebars begins here! -->
   <div class="container">
-    <div class="card text-center col-12">
+    <div id="journal" class="card text-center col-12">
       <div class="card-body">
         <h5 class="card-title">My Whisky Journal</h5>
         <div class="row justify-content-center">
@@ -126,7 +126,7 @@
           </div>
           <div class="col-12 form-group">
             <label for="exampleFormControlTextarea1">Notes:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
           </div>
           <div class="col-12 form-group">
             
@@ -139,6 +139,25 @@
       </div>
     </div>
   </div>
+
+  <!-- Style Add-->
+  <style>
+    body {
+    background-attachment: fixed;
+    }
+
+    .container {
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    #journal {
+      border: solid black 1px;
+      border-radius:1.9%;
+      padding: 3px;
+    }
+  </style>
+  
 <!-- newEntry.handlebars Ends here! -->
     <!-- Bootstrap Links -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
