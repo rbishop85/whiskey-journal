@@ -7,7 +7,7 @@
     {
         "id": 2,
         "name": "BenRiach",
-        "email": "Speyside"
+        "location": "Speyside"
     },
     {
         "id": 3,
@@ -17,7 +17,7 @@
     {
         "id": 4,
         "name": "Bruichladdich",
-        "email": "Islay"
+        "location": "Islay"
     },
     {
         "id": 5,
@@ -27,7 +27,7 @@
     {
         "id": 6,
         "name": "Clynelish",
-        "email": "Highland"
+        "location": "Highland"
     },
     {
         "id": 7,
@@ -37,7 +37,7 @@
     {
         "id": 8,
         "name": "Dalmore",
-        "email": "Highland"
+        "location": "Highland"
     },
     {
         "id": 9,
@@ -47,7 +47,7 @@
     {
         "id": 10,
         "name": "GlenGrant",
-        "email": "Speyside"
+        "location": "Speyside"
     },
     {
         "id": 11,
@@ -57,7 +57,7 @@
     {
         "id": 12,
         "name": "Glenlivet",
-        "email": "Speyside"
+        "location": "Speyside"
     },
     {
         "id": 13,
@@ -67,7 +67,7 @@
     {
         "id": 14,
         "name": "Lagavulin",
-        "email": "Islay"
+        "location": "Islay"
     },
     {
         "id": 15,
@@ -77,7 +77,7 @@
     {
         "id": 16,
         "name": "Longmorn",
-        "email": "Speyside"
+        "location": "Speyside"
     },
     {
         "id": 17,
@@ -87,7 +87,7 @@
     {
         "id": 18,
         "name": "Macallan",
-        "email": "Speyside"
+        "location": "Speyside"
     },
     {
         "id": 19,
@@ -97,7 +97,7 @@
     {
         "id": 20,
         "name": "Springbank",
-        "email": "Campbeltown"
+        "location": "Campbeltown"
     }
     
 ]

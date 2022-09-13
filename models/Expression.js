@@ -20,7 +20,7 @@ Expression.init(
       allowNull: false,
     },
     age: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     wood: {
