@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Journal } = require('../models');
+const { User, Journal, Expression, Distillery } = require('../models');
 const withAuth = require('../utils/auth');
 
 // Prevent non logged in users from viewing the homepage
@@ -9,7 +9,21 @@ router.get('/', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Journal}],
+      include: [
+        { 
+          model: Journal,
+          include: [
+            {
+              model: Expression,
+              attributes: ['name']
+            },
+            {
+              model: Distillery,
+              attributes: ['name']
+            }
+          ]
+        }
+      ],
     });
 
     const user = userData.get({ plain: true });
@@ -35,6 +49,16 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/register', (req, res) => {
+  // If a session exists, redirect the request to the homepage
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('register');
+});
+
 router.get('/journal/:id', withAuth, async (req, res) => {
   try {
     const journalData = await Journal.findByPk(req.params.id, {
@@ -57,7 +81,7 @@ router.get('/journal/:id', withAuth, async (req, res) => {
   }
 });
 
-router.get('/journal/new', withAuth, async (req, res) => {
+router.get('/newJournal', withAuth, async (req, res) => {
   try {
     const distilleryData = await Distillery.findAll();
 
