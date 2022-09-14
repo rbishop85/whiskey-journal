@@ -8,4 +8,16 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-image: url(../images/background.jpg);
+    background-attachment: fixed;
 }
+
+    .container {
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    #journal {
+      border: solid black 1px;
+      border-radius:1.9%;
+      padding: 3px;
+    }
