@@ -11,6 +11,17 @@ body {
     background-attachment: fixed;
 }
 
+.container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#journal {
+    border: solid black 1px;
+    border-radius:1.9%;
+    padding: 3px;
+}
+
 .form-signin, .form-register {
     width: 100%;
     max-width: 330px;
@@ -41,14 +52,4 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
-    .container {
-      margin-top: 1%;
-      margin-bottom: 1%;
-    }
-
-    #journal {
-      border: solid black 1px;
-      border-radius:1.9%;
-      padding: 3px;
-    }
+>>>>>>>>> Temporary merge branch 2
