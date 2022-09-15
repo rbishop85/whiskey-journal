@@ -65,12 +65,14 @@ router.get('/journal/:id', withAuth, async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         },
       ],
     });
 
     const journal = journalData.get({ plain: true });
+
+    console.log(journal);
 
     res.render('journal', {
       ...journal,
