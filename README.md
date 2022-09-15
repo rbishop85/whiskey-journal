@@ -35,7 +35,7 @@ Andrew Ensor
 Casey Robison  
 Robert Bishop
 ## License
-<p>
+
 MIT License
 
 Copyright 2022 &copy; Robert Bishop, Andrew Ensor, Andres Covas, and Casey Robison.
@@ -45,14 +45,35 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</p>
-
 ## Technology
+### NPM Packages
+[bcrypt](https://www.npmjs.com/package/bcrypt)  
+[chart.js](https://www.npmjs.com/package/chart.js)  
+[connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)  
+[dotenv](https://www.npmjs.com/package/dotenv)  
+[express](https://www.npmjs.com/package/express)  
+[handlebars.js](https://www.npmjs.com/package/handlebars)  
+[express-session](https://www.npmjs.com/package/express-session)  
+[mysql2](https://www.npmjs.com/package/mysql2)  
+[sequelize](https://www.npmjs.com/package/sequelize)
 
+### Languages
+- [![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
+- [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.com/)
+- [![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3schools.com/css/)
+
+### Libraries
+
+- [![JQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://www.jquery.com/)
+- [![Bootstrap CSS](https://img.shields.io/badge/-BOOTSTRAPCSS-orange)](https://www.getbootstrap.com/)
+- [![Google Fonts](https://img.shields.io/badge/Google%20FOnts-303030?style=for-the-badge&logo=googlefonts&logoColor=white)](https://www.materializecss.com/)
 ## Model List
-User Model -- Allows individual users to log into the application and view their own personal Scotch Whisky journals.  
-Distillery Model -- To connect individual distilleries with the unique expressions of Scotch Whisky they produce.
-Expression Model -- Contains information about each unique distillery expression. Specifically: Name, Age, ABV, and barrel type.
-Journal Entry Model -- Which contains all the information provided by both the user and the models.
+<b>User Model</b> -- Allows individual users to log into the application and view their own personal Scotch Whisky journals.  
+
+<b>Distillery Model</b> -- To connect individual distilleries with the unique expressions of Scotch Whisky they produce.  
+
+<b>Expression Model</b> -- Contains information about each unique distillery expression. Specifically: Name, Age, ABV, and barrel type.  
+
+<b>Journal Entry Model</b> -- Which contains all the information provided by both the user and the models.
 
 
