@@ -5,12 +5,29 @@ html, body {
 }
 
 #homepage-background {
-    height: 100%;
+    height: fit-content;
+    min-height: 90%;
     width: 100%;
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/background.jpg);
     background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-entry-row {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+#dropdown-group {
+    width: 70%;
 }
 
 .navbar {
@@ -29,8 +46,9 @@ html, body {
 }
 
 .container {
-    padding-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
 }
 
 #signin-container {
