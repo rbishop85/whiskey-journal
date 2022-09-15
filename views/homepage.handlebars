@@ -1,17 +1,18 @@
-<div class="row">
-    <div class="col-auto">
-        <h2>Welcome, {{username}}!</h2>
-    </div>
-</div>
-
-<div class="row mt-4">
-    <div class="col-md-6">
-        <a class="btn btn-primary" href="/newJournal" role="button">New Journal Entry:</a>
+<div id="homepage-background">
+    <div class="row">
+        <div class="col-auto">
+            <h2>Welcome, {{username}}!</h2>
+        </div>
     </div>
 
-    {{#if journals.length}}
-    <div class="col-md-6 journal-list">
-        <h3>Current Journal Entries:</h3>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <a class="btn btn-primary" href="/newJournal" role="button">New Journal Entry:</a>
+        </div>
+
+        {{#if journals.length}}
+        <div class="col-md-6 journal-list">
+            <h3>Current Journal Entries:</h3>
 
         {{#each journals as |journal|}}
         <div class="row mb-2">
@@ -21,10 +22,9 @@
             <div class="col-md-4">
                 <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
+        {{/if}}
     </div>
-    {{/if}}
 </div>
-
 <script src="./js/homepage.js"></script>
