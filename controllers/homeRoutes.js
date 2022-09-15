@@ -65,12 +65,14 @@ router.get('/journal/:id', withAuth, async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['username'],
         },
       ],
     });
 
     const journal = journalData.get({ plain: true });
+
+    console.log(journal);
 
     res.render('journal', {
       ...journal,
@@ -86,6 +88,8 @@ router.get('/newJournal', withAuth, async (req, res) => {
     const distilleryData = await Distillery.findAll();
 
     const distilleries = distilleryData.map((distillery) => distillery.get({ plain: true }));
+
+    console.log(distilleries);
 
     res.render('newEntry', { 
       distilleries, 
