@@ -14,14 +14,13 @@
         <div class="col-md-6 journal-list">
             <h3>Current Journal Entries:</h3>
 
-            {{#each journals as |journal|}}
-            <div class="row mb-2">
-                <div class="col-md-8">
-                    <h4><a href="/journals/{{journal.id}}">{{journal.expression.name}} by {{journal.distillery.name}}</a></h4>
-                </div>
-                <div class="col-md-4">
-                    <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
-                </div>
+        {{#each journals as |journal|}}
+        <div class="row mb-2">
+            <div class="col-md-8">
+                <h4><a href="/journal/{{journal.id}}">{{journal.expression.name}} by {{journal.distillery.name}}</a></h4>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
             </div>
             {{/each}}
         </div>
