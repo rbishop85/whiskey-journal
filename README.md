@@ -4,6 +4,8 @@ An app where users can record their reviews, tasting notes, and any other inform
 ## Deployed Application
 [Deployed Application](https://whisky-journal.herokuapp.com/)
 
+## GitHub Repository
+[Scotch Whisky Journal Repo](https://github.com/rbishop85/whiskey-journal)
 ## Preview Image
 ![Application Preview Image](... link to image.gif)
 
