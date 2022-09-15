@@ -3,51 +3,41 @@
     <div class="card-body">
       <h5 class="card-title">My Whisky Journal</h5>
       <div class="row justify-content-center">
-        <div class="dropdown show">
-          <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="distilleryDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Distillery:</a>
-          <div class="dropdown-menu" aria-labelledby="distilleryDropdownMenu">
-            <a class="dropdown-item" href="#">Auchentoshan</a>
-            <a class="dropdown-item" href="#">BenRiach</a>
-            <a class="dropdown-item" href="#">Bowmore</a>
-            <a class="dropdown-item" href="#">etc...</a>
-          </div>
-        </div>
-      
-        <div class="dropdown show">
-          <a class="btn btn-primary dropdown-toggle disabled" href="#" role="button" id="expressionDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Expression:</a>
-          <div class="dropdown-menu" aria-labelledby="expressionDropdownMenu">
-            <a class="dropdown-item" href="#">expression1</a>
-            <a class="dropdown-item" href="#">expression2</a>
-            <a class="dropdown-item" href="#">expression3</a>
-            <a class="dropdown-item" href="#">etc...</a>
-          </div>
-        </div>
+        <select id="distilleryList" onchange="loadExpressions()">
+          <option value="" selected disabled hidden>Select Distillery</option>
+          {{#each distilleries}}
+          <option value="{{id}}">{{name}}</option>
+          {{/each}}
+        </select>
+        <select id="expressionList">
+          <option value="">Select Expression</option>
+        </select>
       </div>
       <p class="card-text">Color (Dark to Light -- Choose One)</p>
       <div class="container">
         <div class="row ms-3">
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="mahogany-radio" value="option1" checked>
+            <input class="form-check-input" type="radio" name="colorRadios" id="mahogany-radio" value="Mahogany" checked>
             <label class="form-check-label" for="mahogany-radio">Mahogany</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="caramel-radio" value="option2">
+            <input class="form-check-input" type="radio" name="colorRadios" id="caramel-radio" value="Caramel">
             <label class="form-check-label" for="caramel-radio">Caramel</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="option3">
+            <input class="form-check-input" type="radio" name="colorRadios" id="amber-radio" value="Amber">
             <label class="form-check-label" for="amber-radio">Amber</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="gold-radio" value="option4">
+            <input class="form-check-input" type="radio" name="colorRadios" id="gold-radio" value="Gold">
             <label class="form-check-label" for="gold-radio">Gold</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="option5">
+            <input class="form-check-input" type="radio" name="colorRadios" id="honey-radio" value="Honey">
             <label class="form-check-label" for="honey-radio">Honey</label>
           </div>
           <div class="form-check col-2">
-            <input class="form-check-input" type="radio" name="colorRadios" id="straw-radio" value="option6">
+            <input class="form-check-input" type="radio" name="colorRadios" id="straw-radio" value="Straw">
             <label class="form-check-label" for="straw-radio">Straw</label>
           </div>
         </div>
@@ -104,8 +94,8 @@
 
         </div>
         <div class="col-12 form-group">
-          <label for="exampleFormControlTextarea1">Notes:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="notesText">Notes:</label>
+          <textarea class="form-control" id="notesText" rows="3"></textarea>
         </div>
         <div class="col-12 form-group">
           
@@ -113,8 +103,10 @@
           <input type="range" class="form-control-range" min="1" max="5" id="overallRange" onInput="$('#overallrangeval').html($(this).val())">
           <span id="overallrangeval">3</span>
         </div>
-        <a href="#" class="btn btn-primary">Submit</a>
+        <a href="#" class="btn btn-primary" id="new-journal-submit">Submit</a>
       </form>
     </div>
   </div>
 </div>
+
+<script src="/js/newEntry.js"></script>
