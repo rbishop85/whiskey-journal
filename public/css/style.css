@@ -27,6 +27,21 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
+#welcome {
+    display: block;
+    width: 100vw;
+    margin: auto;
+}
+
+#entries {
+    display: block;
+    background-color: white;
+    border: solid black 1px;
+    opacity: 0.95;
+    padding: 10px;
+    border-radius: 10px;
+}
 #new-entry-row {
     max-width: 100%;
     padding: 0;
