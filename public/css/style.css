@@ -16,6 +16,17 @@ html, body {
     align-items: center;
 }
 
+#list-background {
+    height: fit-content;
+    min-height: 90%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/whisky_map.png);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
 #new-entry-row {
     max-width: 100%;
     padding: 0;
