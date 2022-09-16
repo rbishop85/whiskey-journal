@@ -12,14 +12,14 @@
 
         {{#if journals.length}}
         <div class="col-md-8 journal-list" id="entries">
-            <h5>Current Journal Entries:</h5>
+            <h4><u><strong>Current Journal Entries</strong></u></h4>
 
         {{#each journals as |journal|}}
         <div class="row mb-2">
-            <div class="col-md-8">
-                <h6><a href="/journal/{{journal.id}}">{{journal.expression.name}} by {{journal.distillery.name}}</a></h6>
+            <div class="col-md-8 mt-2">
+                <h5><a href="/journal/{{journal.id}}">{{journal.expression.name}}</a></h5>
             </div>
-            <div class="col-md-2">
+            <div class="col-mp-2">
                 <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
             </div>
             {{/each}}
