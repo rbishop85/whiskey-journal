@@ -5,13 +5,13 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-3">
-            <a class="btn btn-primary" href="/newJournal" role="button">New Journal Entry:</a>
+    <div class="row m-3">
+        <div class="col-md-4">
+            <a class="btn btn-primary" href="/newJournal" role="button" id="new-journal-btn">New Journal Entry</a>
         </div>
 
         {{#if journals.length}}
-        <div class="col-md-9 journal-list" id="entries">
+        <div class="col-md-8 journal-list" id="entries">
             <h5>Current Journal Entries:</h5>
 
         {{#each journals as |journal|}}
