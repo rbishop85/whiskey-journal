@@ -180,3 +180,18 @@ select {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+#distilleryList {
+    width: 250px;
+    height: 50px;
+}
+
+#expressionList {
+    width: 400px;
+    height: 50px;
+}
+
+#logout:hover {
+    color: white;
+
+}
