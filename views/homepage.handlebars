@@ -1,12 +1,12 @@
 <div id="list-background">
-    <div class="row justify-content-center" id="welcome">
+    <div class="row justify-content-center">
         <div class="col-12">
             <div>
                 <h2 class="text-center"id="welcome-message">Welcome, {{username}}!</h2>
             </div>
         </div>
-    </div>
 
+    </div>
     <div class="row m-3">
         <div class="col-md-4">
             <a class="btn btn-primary" href="/newJournal" role="button" id="new-journal-btn">New Journal Entry</a>
@@ -14,11 +14,11 @@
 
         {{#if journals.length}}
         <div class="col md-8 journal-list" id="entries">
-            <h4><u><strong>Current Journal Entries</strong></u></h4>
+            <h4 class="text-center" id="journal-title"><u><strong>Current Journal Entries</strong></u></h4>
             <div class="col mb-2">
                 {{#each journals as |journal|}}
-                <div class="row">
-                    <div class="col-md-8 mt-2">
+                <div class="row" id="whisky-list">
+                    <div class="col-md-8">
                         <h5><a href="/journal/{{journal.id}}">{{journal.expression.name}}</a></h5>
                     </div>
                     <div class="col md-2">

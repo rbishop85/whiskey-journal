@@ -49,6 +49,7 @@ Journal.init(
       },
       notes: {
         type: DataTypes.STRING,
+        allowNull: true,
       },
       rating: {
         type: DataTypes.INTEGER,
