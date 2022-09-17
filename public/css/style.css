@@ -30,7 +30,6 @@ html, body {
 
 #journal-background {
     height: fit-content;
-    height: calc(100% - 82px);
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
@@ -100,7 +99,7 @@ select {
 }
 
 #login-background, #register-background {
-    height: 90%;
+    height: calc(100% - 82px);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
