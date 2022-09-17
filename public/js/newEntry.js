@@ -54,7 +54,7 @@ const newJournalSubmit = async (event) => {
   const expression_id = expressionEl.options[expressionEl.selectedIndex].value;
 
   // If we have values for everything, submit the post request to create the new journal
-  if (color && winey && woody && sulphury && feinty && peaty && floral && fruity && malty && notes && rating && distillery_id && expression_id) {
+  if (color && winey && woody && sulphury && feinty && peaty && floral && fruity && malty && rating && distillery_id && expression_id) {
     const response = await fetch(`/api/journals`, {
       method: 'POST',
       body: JSON.stringify({ color, winey, woody, sulphury, feinty, peaty, floral, fruity, malty, notes, rating, distillery_id, expression_id }),
