@@ -1,5 +1,5 @@
 html, body {
-    /* margin: 0; */
+    margin: 0;
     height: 100%;
     width: 100%;
 }
@@ -18,7 +18,6 @@ html, body {
 
 #list-background {
     height: fit-content;
-    height: calc(100% - 82px);
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
@@ -28,17 +27,6 @@ html, body {
     align-items: center;
 }
 
-#journal-background {
-    height: fit-content;
-    height: calc(100% - 82px);
-    width: 100%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-image: url(../images/irish_countryside___getty.jpg);
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-}
 #entries {
     background-color: white;
     border: solid black 1px;
@@ -92,15 +80,15 @@ select {
 
 #new-journal-btn {
     display: flex;
+    padding: 0.8rem;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    padding: 0.8rem;
 }
 
 #login-background, #register-background {
-    height: 90%;
+    height: calc(100% - 82px);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -210,34 +198,3 @@ select {
 #journal-title {
     margin-bottom: 45px;
 }
-
-#erase-button {
-    width: 200px;
-    height: 40px;
-}
-
-#erase-entry{
-    font-family: 'Special Elite', cursive;
-    font-size: 1.1rem;
-    color: red;
-}
-
-#flavorWheelDisplay {
-    display: block;
-    width: 400px;
-    height: 400px;
-}
-
-@media screen and (max-width: 1340px) {
-    
-    #entries {
-        margin: auto;
-        background-position: 20%;
-    }
-}
-@media screen and (max-width: 660px) {
-    
-    #entries {
-        margin: auto;
-        background-position: 20%;
-    }
