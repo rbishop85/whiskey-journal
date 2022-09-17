@@ -34,11 +34,37 @@ html, body {
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url(../images/irish_countryside___getty.jpg);
+    background-image: url(../images/whiskey-fb2.jpg);
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
+    padding-top: 5%;
+    font-size: larger;
 }
+
+#journalbackground-scehme {
+    background-color: #000;
+    padding-top: 5%;
+    color: #fff;
+    opacity: .8;
+    }
+
+#backgroundscheme2{
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    font-size: x-large;
+}
+
+#backgroundscheme3{
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    font-size: x-large;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
 #entries {
     background-color: white;
     border: solid black 1px;
@@ -117,6 +143,7 @@ select {
     padding-top: 1%;
     margin-bottom: 1%;
     margin-left: auto;
+    
 }
 
 #signin-container {
@@ -211,10 +238,12 @@ select {
 
 #journal-title {
     margin-bottom: 45px;
+    
 }
 
 #flavorWheelDisplay {
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
+    margin-left: 25%;
 }
