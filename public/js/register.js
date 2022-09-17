@@ -5,16 +5,25 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector("#registerPassword").value.trim();
 
   if (username && password) {
-    const response = await fetch("/api/users", {
-      method: "POST",
-      body: JSON.stringify({ username, password }),
-      headers: { "Content-Type": "application/json" },
+
+    const namecheck = await fetch(`/api/users/available/${username}`, {
+      method: "GET"
     });
 
-    if (response.ok) {
-      document.location.replace("/");
+    if (namecheck.ok) {
+      alert("Username already taken, please choose another")
     } else {
-      alert(response.statusText);
+      const response = await fetch("/api/users", {
+        method: "POST",
+        body: JSON.stringify({ username, password }),
+        headers: { "Content-Type": "application/json" },
+      });
+  
+      if (response.ok) {
+        document.location.replace("/");
+      } else {
+        alert(response.statusText);
+      }
     }
   }
 };

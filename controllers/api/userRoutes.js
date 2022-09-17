@@ -1,6 +1,23 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+
+router.get('/available/:username', async (req, res) => {
+  try {
+    const userData = await User.findOne({ where: { username: req.params.username }
+    });
+
+    if (!userData) {
+      res.status(404).json({ message: 'No User found with this username!' });
+      return;
+    }
+
+    res.status(200).json(userData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
