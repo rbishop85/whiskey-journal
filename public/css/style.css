@@ -28,14 +28,7 @@ html, body {
     align-items: center;
 }
 
-#welcome {
-    /* display: block; */
-    width: 90vw;
-    margin: auto; 
-}
-
 #entries {
-    /* display: block; */
     background-color: white;
     border: solid black 1px;
     padding: 10px;
@@ -44,6 +37,11 @@ html, body {
     border-radius: 10px;
     background-image: url(../images/legalpad.jpg);
     font-family: 'Special Elite', cursive;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 a:visited {
@@ -142,7 +140,6 @@ select {
 
 #welcome-message {
     background-color: #f8f9fa;
-    border-radius: 10px;
     padding: 1%;
     border: #343a40;
     border-style: solid;
@@ -194,5 +191,13 @@ select {
 
 #logout:hover {
     color: white;
+}
 
+#whisky-list {
+    margin-bottom: 5px;
+    margin-left: 15%;
+}
+
+#journal-title {
+    margin-bottom: 45px;
 }
