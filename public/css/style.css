@@ -16,6 +16,45 @@ html, body {
     align-items: center;
 }
 
+#list-background {
+    height: fit-content;
+    min-height: 100%;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/whisky_map.png);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    display: block;
+    width: 100vw;
+    margin: auto; 
+}
+
+#entries {
+    display: block;
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-image: url(../images/legalpad.jpg);
+    font-family: 'Special Elite', cursive;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 #new-entry-row {
     max-width: 100%;
     padding: 0;
@@ -40,6 +79,17 @@ select {
 
 .navbar {
     height: 10%;
+}
+
+#new-journal-btn {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 75px;
 }
 
 #login-background {
@@ -129,4 +179,19 @@ select {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+#distilleryList {
+    width: 250px;
+    height: 50px;
+}
+
+#expressionList {
+    width: 400px;
+    height: 50px;
+}
+
+#logout:hover {
+    color: white;
+
 }

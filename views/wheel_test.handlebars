@@ -1,0 +1,21 @@
+{{!-- Storing color values provided when page generates --}}
+<script>
+    const winey = {{winey}};
+    const woody = {{woody}};
+    const sulphury = {{sulphury}};
+    const feinty = {{feinty}};
+    const peaty = {{peaty}};
+    const floral = {{floral}};
+    const fruity = {{fruity}};
+    const malty = {{malty}};
+</script>
+
+{{!-- Flavor Wheel display area --}}
+<div id="flavorWheelDisplay">
+    <canvas id="myChart"></canvas>
+</div>
+
+
+{{!-- Necessary script files --}}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/journal.js"></script>

@@ -1,25 +1,25 @@
-<div id="homepage-background">
-    <div class="row justify-content-center">
+<div id="list-background">
+    <div class="row justify-content-center" id="welcome">
         <div class="col-auto">
-            <h2 id="welcome-message">Welcome, {{username}}!</h2>
+            <h2 class="text-center"id="welcome-message">Welcome, {{username}}!</h2>
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <a class="btn btn-primary" href="/newJournal" role="button">New Journal Entry:</a>
+    <div class="row m-3">
+        <div class="col-md-4">
+            <a class="btn btn-primary" href="/newJournal" role="button" id="new-journal-btn">New Journal Entry</a>
         </div>
 
         {{#if journals.length}}
-        <div class="col-md-6 journal-list">
-            <h3>Current Journal Entries:</h3>
+        <div class="col-md-8 journal-list" id="entries">
+            <h4><u><strong>Current Journal Entries</strong></u></h4>
 
         {{#each journals as |journal|}}
         <div class="row mb-2">
-            <div class="col-md-8">
-                <h4><a href="/journal/{{journal.id}}">{{journal.expression.name}} by {{journal.distillery.name}}</a></h4>
+            <div class="col-md-8 mt-2">
+                <h5><a href="/journal/{{journal.id}}">{{journal.expression.name}}</a></h5>
             </div>
-            <div class="col-md-4">
+            <div class="col-mp-2">
                 <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
             </div>
             {{/each}}
