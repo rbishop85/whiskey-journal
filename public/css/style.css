@@ -92,13 +92,14 @@ select {
     margin-left: 75px;
 }
 
-#login-background {
+#login-background, #register-background {
     height: 90%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/ardbeg.jpeg);
     background-attachment: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -130,7 +131,7 @@ select {
     align-self: center;
 }
 
-#register-message {
+#register-message, #login-message {
     background-color: #f8f9fa;
     border-radius: 10px;
     padding: 1%;
