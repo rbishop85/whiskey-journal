@@ -1,6 +1,6 @@
 <div id="list-background">
-    <div class="row justify-content-center">
-        <div class="col-12">
+    <div class="row justify-content-center m-0">
+        <div class="col-12 p-0">
             <div>
                 <h2 class="text-center"id="welcome-message">Welcome, {{username}}!</h2>
             </div>
@@ -8,21 +8,22 @@
 
     </div>
     <div class="row m-3">
-        <div class="col-md-4">
-            <a class="btn btn-primary" href="/newJournal" role="button" id="new-journal-btn">New Journal Entry</a>
+        <div class="col-md-4 col-sm-12">
+            <a class="btn btn-primary mb-3" href="/newJournal" role="button" id="new-journal-btn">New Journal Entry</a>
         </div>
 
         {{#if journals.length}}
-        <div class="col md-8 journal-list" id="entries">
+        <div class="col-md-8 col-sm-12 journal-list" id="entries">
+
             <h4 class="text-center" id="journal-title"><u><strong>Current Journal Entries</strong></u></h4>
             <div class="col mb-2">
                 {{#each journals as |journal|}}
                 <div class="row" id="whisky-list">
-                    <div class="col-md-8">
-                        <h5><a href="/journal/{{journal.id}}">{{journal.expression.name}}</a></h5>
+                    <div class="col-md-8 col">
+                        <h5></h5><a href="/journal/{{journal.id}}">{{journal.expression.name}}</a></h5>
                     </div>
-                    <div class="col md-2">
-                        <button class="btn btn-sm btn-danger" data-id="{{journal.id}}">DELETE</button>
+                    <div class="col-md-4" id="erase-button">
+                        <button class="btn pb-5" id="erase-entry" data-id="{{journal.id}}">Erase Entry</button>
                     </div>
                     
                 </div>

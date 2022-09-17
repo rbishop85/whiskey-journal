@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    /* margin: 0; */
     height: 100%;
     width: 100%;
 }
@@ -118,13 +118,11 @@ select {
 
 #new-journal-btn {
     display: flex;
-    width: 300px;
-    height: 100px;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin-left: 75px;
+    padding: 0.8rem;
 }
 
 #login-background, #register-background {
@@ -241,9 +239,35 @@ select {
     
 }
 
+#erase-button {
+    width: 200px;
+    height: 40px;
+}
+
+#erase-entry{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1rem;
+    color: red;
+}
+
 #flavorWheelDisplay {
     display: block;
     width: 500px;
     height: 500px;
     margin-left: 25%;
 }
+
+@media screen and (max-width: 1340px) {
+    
+    #entries {
+        margin: auto;
+        background-position: 20%;
+    }
+}
+@media screen and (max-width: 660px) {
+    
+    #entries {
+        margin: auto;
+        background-position: 20%;
+    }
+
