@@ -29,13 +29,13 @@ html, body {
 }
 
 #welcome {
-    display: block;
-    width: 100vw;
+    /* display: block; */
+    width: 90vw;
     margin: auto; 
 }
 
 #entries {
-    display: block;
+    /* display: block; */
     background-color: white;
     border: solid black 1px;
     padding: 10px;
@@ -78,7 +78,7 @@ select {
 }
 
 .navbar {
-    height: 10%;
+    height: 80;
 }
 
 #new-journal-btn {
