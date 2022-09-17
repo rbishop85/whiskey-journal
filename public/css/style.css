@@ -99,6 +99,7 @@ select {
     background-repeat: no-repeat;
     background-image: url(../images/ardbeg.jpeg);
     background-attachment: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
