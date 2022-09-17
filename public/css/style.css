@@ -28,6 +28,17 @@ html, body {
     align-items: center;
 }
 
+#journal-background {
+    height: fit-content;
+    height: calc(100% - 82px);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/irish_countryside___getty.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
 #entries {
     background-color: white;
     border: solid black 1px;

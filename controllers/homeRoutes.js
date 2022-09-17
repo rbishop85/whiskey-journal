@@ -67,6 +67,12 @@ router.get('/journal/:id', withAuth, async (req, res) => {
           model: User,
           attributes: ['username'],
         },
+        {
+          model: Distillery
+        },
+        {
+          model: Expression
+        },
       ],
     });
 
