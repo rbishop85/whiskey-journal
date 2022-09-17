@@ -28,14 +28,7 @@ html, body {
     align-items: center;
 }
 
-#welcome {
-    /* display: block; */
-    width: 90vw;
-    margin: auto; 
-}
-
 #entries {
-    /* display: block; */
     background-color: white;
     border: solid black 1px;
     padding: 10px;
@@ -142,7 +135,7 @@ select {
 
 #welcome-message {
     background-color: #f8f9fa;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 1%;
     border: #343a40;
     border-style: solid;
@@ -194,5 +187,4 @@ select {
 
 #logout:hover {
     color: white;
-
 }
