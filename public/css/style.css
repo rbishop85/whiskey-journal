@@ -199,3 +199,9 @@ select {
 #journal-title {
     margin-bottom: 45px;
 }
+
+#flavorWheelDisplay {
+    display: block;
+    width: 400px;
+    height: 400px;
+}
