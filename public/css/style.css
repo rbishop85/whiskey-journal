@@ -81,13 +81,12 @@ select {
 
 #new-journal-btn {
     display: flex;
-    width: 300px;
-    height: 100px;
+    padding: 0.8rem;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin-left: 75px;
+    /* margin-left: auto; */
 }
 
 #login-background, #register-background {
