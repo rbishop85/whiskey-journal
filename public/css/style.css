@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    /* margin: 0; */
     height: 100%;
     width: 100%;
 }
@@ -18,7 +18,7 @@ html, body {
 
 #list-background {
     height: fit-content;
-    min-height: 100%;
+    height: calc(100% - 82px);
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
@@ -28,6 +28,17 @@ html, body {
     align-items: center;
 }
 
+#journal-background {
+    height: fit-content;
+    height: calc(100% - 82px);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/irish_countryside___getty.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
 #entries {
     background-color: white;
     border: solid black 1px;
@@ -209,7 +220,12 @@ select {
     font-family: 'Special Elite', cursive;
     font-size: 1.1rem;
     color: red;
-    
+}
+
+#flavorWheelDisplay {
+    display: block;
+    width: 400px;
+    height: 400px;
 }
 
 @media screen and (max-width: 1340px) {
@@ -225,4 +241,3 @@ select {
         margin: auto;
         background-position: 20%;
     }
-}

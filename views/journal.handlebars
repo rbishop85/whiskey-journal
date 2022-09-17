@@ -1,0 +1,88 @@
+<script>
+    const winey = {{winey}};
+    const woody = {{woody}};
+    const sulphury = {{sulphury}};
+    const feinty = {{feinty}};
+    const peaty = {{peaty}};
+    const floral = {{floral}};
+    const fruity = {{fruity}};
+    const malty = {{malty}};
+</script>
+<div class="container" id="journal-background">
+  	<div class="card text-center col-10">
+    	<div class="card-body">
+	
+			<div class="container-fluid mainCon">
+				<div class="row">
+					<div class="col-12 col-md-3 col-xl-3 colOne">
+							
+						<div class="mb-3">
+									{{expression.name}}
+							
+						</div>
+	                    <div class="mb-3">
+							Location: {{distillery.location}}
+							
+						</div>
+
+                        <div class="mb-3">
+							Age: {{expression.age}}
+							
+						</div>
+
+                        <div class="mb-3">
+							Wood: {{expression.wood}}
+							
+						</div>
+
+                        <div class="mb-3">
+							Rating: {{rating}}
+							
+						</div>
+						<div class="mb-3">
+							Color: {{color}}
+							
+						</div>
+                       
+
+                            
+						<div class="container"></div>
+                            
+
+					</div>
+					<div class="col-12 col-md-9 col-xl-9 colTwo">
+
+							
+ 						<div class="card bg-light mb-3 "  style="max-width: 1000px;">
+									
+							<h3 class="card-header whisky wheel">
+                                
+                                <container class="container">
+    								<div id="flavorWheelDisplay">
+        								<canvas id="myChart"></canvas>
+      								</div>
+    							</container>
+    
+                            </h3>
+							<img class="icons"/>
+									
+						</div>
+					</div>
+	
+ 					<div class="card bg-light mb-3 "  style="max-width: 1000px;">
+									
+						<h3 class="card-header Notes">Notes:</h3>
+
+					</div>
+					<div class="mb-3">
+						{{notes}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/journal.js"></script>
+
+						
