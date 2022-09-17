@@ -1,5 +1,5 @@
 html, body {
-    margin: 0;
+    /* margin: 0; */
     height: 100%;
     width: 100%;
 }
@@ -86,7 +86,6 @@ select {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    /* margin-left: auto; */
 }
 
 #login-background, #register-background {
