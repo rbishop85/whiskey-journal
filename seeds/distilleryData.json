@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Auchentoshan",
-        "location": "Lowland"
+        "location": "Lowlands"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
     {
         "id": 6,
         "name": "Clynelish",
-        "location": "Highland"
+        "location": "Highlands"
     },
     {
         "id": 7,
@@ -37,12 +37,12 @@
     {
         "id": 8,
         "name": "Dalmore",
-        "location": "Highland"
+        "location": "Highlands"
     },
     {
         "id": 9,
         "name": "Edradour",
-        "location": "Highland"
+        "location": "Highlands"
     },
     {
         "id": 10,
