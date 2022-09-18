@@ -1,89 +1,86 @@
 <script>
-    const winey = {{winey}};
-    const woody = {{woody}};
-    const sulphury = {{sulphury}};
-    const feinty = {{feinty}};
-    const peaty = {{peaty}};
-    const floral = {{floral}};
-    const fruity = {{fruity}};
-    const malty = {{malty}};
+  const winey =
+  {{winey}}; const woody =
+  {{woody}}; const sulphury =
+  {{sulphury}}; const feinty =
+  {{feinty}}; const peaty =
+  {{peaty}}; const floral =
+  {{floral}}; const fruity =
+  {{fruity}}; const malty =
+  {{malty}};
 </script>
-<div class="" id="journal-background">
-  	<div class="card text-center col-10 container" id="journalbackground-scehme">
-    	<div class="card-body">
-	
-			<div class="container-fluid mainCon">
-				<div class="row">
-					<div class="col-12 col-md-3 col-xl-3 colOne" style="font-family: cursive;">
-					
-							
-						<div class="mb-3">
-									{{expression.name}}
-							
-						</div>
-	                    <div class="mb-3">
-							Location: {{distillery.location}}
-							
-						</div>
+<div class="col-12" id="journal-background">
+  <div class="card text-center col-lg-8 col-md-10 col-sm-8 container" id="journalbackground-scehme">
+    <div class="card-body">
 
-                        <div class="mb-3">
-							Age: {{expression.age}}
-							
-						</div>
+      <div class="container-fluid mainCon">
+        <div class="row">
+          <div class="col-12 col-md-3 col-sm-12 col-xl-3 colOne">
 
-                        <div class="mb-3">
-							Wood: {{expression.wood}}
-							
-						</div>
+            <div class="mb-3">
+              {{expression.name}}
 
-                        <div class="mb-3">
-							Rating: {{rating}}
-							
-						</div>
-						<div class="mb-3">
-							Color: {{color}}
-							
-						</div>
-                       
+            </div>
+            <div class="mb-3">
+              Location:
+              {{distillery.location}}
 
-                            
-						<div class="container"></div>
-                            
+            </div>
 
-					</div>
-					<div class="col-12 col-md-9 col-xl-9 colTwo">
+            <div class="mb-3">
+              Age:
+              {{expression.age}}
 
-							
- 						<div class="card bg-light mb-3 "  style="max-width: 1000px;">
-									
-							<h3 class="card-header whisky wheel">
-                                
-                                <container class="container">
-    								<div id="flavorWheelDisplay">
-        								<canvas id="myChart"></canvas>
-      								</div>
-    							</container>
-    
-                            </h3>
-							<img class="icons"/>
-									
-						</div>
-					</div>
-	
- 					<div class="mb-3 "  style="max-width: 1000px;">
-									
-						<h3 class="card-header Notes" style="font-family: cursive" id="backgroundscheme2" >Notes:</h3>
+            </div>
 
-					</div>
-					<div class="mb-3" tyle="max-width: 1000px" style="font-family: cursive;" id="backgroundscheme3">
-						{{notes}}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="mb-3">
+              Wood:
+              {{expression.wood}}
+
+            </div>
+
+            <div class="mb-3">
+              Rating:
+              {{rating}}
+
+            </div>
+            <div class="mb-3">
+              Color:
+              {{color}}
+
+            </div>
+
+            <div class="container" id="wheel_container"></div>
+
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xl-9 colTwo">
+
+            {{!-- <div class="card bg-light mb-3" style="max-width: 1000px;"> --}}
+
+              <h3 class="card-header" id="whisky-wheel">
+
+                <container class="container">
+                  <div id="flavorWheelDisplay">
+                    <canvas id="myChart"></canvas>
+                  </div>
+                </container>
+
+              </h3>
+              <img class="icons" />
+
+            </div>
+          </div>
+
+          <div class="mb-3" style="max-width: 1000px;">
+            <h5 class="col-4 Notes">Notes:</h5>
+          </div>
+          <div class="col-12 mb-3" tyle="max-width: 1000px" id="backgroundscheme3">
+            {{notes}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/js/journal.js"></script>
-
-						
