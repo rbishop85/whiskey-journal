@@ -9,42 +9,65 @@
     const malty = {{malty}};
 </script>
 <div class="column" id="journal-background">
-    <div class="card text-center col-10 container" id="journalbackground-scehme">
-        <div class="card-body">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="column" style="font-family: cursive;">
+  	<div class="card text-center col-10 container" id="journalbackground-scehme">
+    	<div class="card-body">
+	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="column" style="font-family: cursive;">
+					
+							
+						<div class="mb-3">
+									{{expression.name}}
+							
+						</div>
+	                    <div class="mb-3">
+							Location: {{distillery.location}}
+							
+						</div>
+
                         <div class="mb-3">
-                                    {{expression.name}}
-                        </div>
+							Age: {{expression.age}}
+							
+						</div>
+
                         <div class="mb-3">
-                            Location: {{distillery.location}}
-                        </div>
+							Wood: {{expression.wood}}
+							
+						</div>
+
                         <div class="mb-3">
-                            Age: {{expression.age}}
-                        </div>
-                        <div class="mb-3">
-                            Wood: {{expression.wood}}
-                        </div>
-                        <div class="mb-3">
-                            Rating: {{rating}}
-                        </div>
-                        <div class="mb-3">
-                            Color: {{color}}
-                        </div>
-                    </div>
-                        <div class="container-fluid" class="mb-3" style="max-width: 1000px;">
-                                    <div id="flavorWheelDisplay">
-                                        <canvas id="myChart"></canvas>
-                                    </div>
-                        </div>
-                            <img class="icons"/>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="mb-3" style="font-family: cursive;" id="journalbackground">
-                        Notes: {{notes}}
-                    </div>
-        </div>
+							Rating: {{rating}}
+							
+						</div>
+						<div class="mb-3">
+							Color: {{color}}
+							
+						</div>
+
+					</div>
+					
+						<div class="container-fluid" class="mb-3" style="max-width: 1000px;">
+    								<div id="flavorWheelDisplay">
+        								<canvas id="myChart"></canvas>
+									</div>
+							
+						</div>
+
+							<img class="icons"/>
+									
+						</div>
+					</div>
+	
+					</div>
+
+					<div class="mb-3" style="font-family: cursive;" id="journalbackground">
+						Notes: {{notes}}
+					</div>
+		</div>
+		
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/js/journal.js"></script>
+
+						
