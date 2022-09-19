@@ -263,6 +263,12 @@ select {
     background-color: white;
 }
 
+#brand {
+
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 1340px) {
     
     #entries {
@@ -288,5 +294,6 @@ select {
     }
 
     #journal-background {
-    height: calc(100% + 100%);
+    height: calc(100% + 29%);
     }
+}
