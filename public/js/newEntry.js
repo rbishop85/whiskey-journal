@@ -1,3 +1,4 @@
+// Load a list of available expressions based on the Distillery selected
 const loadExpressions = async () => {
   var x = document.getElementById('distilleryList').value;
 
@@ -16,6 +17,7 @@ const loadExpressions = async () => {
   };
 };
 
+// Gather entered journal values and submit them
 const newJournalSubmit = async (event) => {
   event.preventDefault();
 

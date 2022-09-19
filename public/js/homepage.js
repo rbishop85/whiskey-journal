@@ -1,3 +1,4 @@
+// Create a delete fetch request based on the data-id of the clicked delete button
 const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
