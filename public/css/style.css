@@ -4,13 +4,13 @@ html, body {
     width: 100%;
 }
 
-#homepage-background {
+#newEntry-background {
     height: fit-content;
     min-height: 90%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/barrels.jpg);
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ html, body {
     /* font-size: larger; */
 }
 
-#journalbackground-scehme {
+#journalbackground-scheme {
     background-color: white;
     padding-top: 5%;
     color: black;
