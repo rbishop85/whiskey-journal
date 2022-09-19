@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
     /* margin: 0; */
     height: calc(100%);
-    width: calc(100%);    
+    width: calc(100%);
 }
 
 #homepage-background {
@@ -20,7 +21,7 @@ html, body {
     height: fit-content;
     height: calc(100% - 82px);
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/whisky_map.png);
     background-attachment: fixed;
@@ -32,7 +33,7 @@ html, body {
     height: fit-content;
     height: calc(100%);
     width: 100%;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/whisky_taste.jpg);
     background-attachment: fixed;
@@ -47,7 +48,7 @@ html, body {
     padding-top: 5%;
     color: black;
     opacity: .8;
-    }
+}
 
 #entries {
     background-color: white;
@@ -88,12 +89,29 @@ a:hover {
     width: 70%;
 }
 
-#dropdown-button {display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+#dropdown-button {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
 
 select {
-    color:#fff;
-    background-color:#007bff;
-    border-color:#007bff
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff
 }
 
 .navbar {
@@ -109,8 +127,9 @@ select {
     padding: 0.8rem;
 }
 
-#login-background, #register-background {
-    height: calc(100% - 82px);
+#login-background,
+#register-background {
+    height: 90%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -125,7 +144,6 @@ select {
     padding-top: 1%;
     margin-bottom: 1%;
     margin-left: auto;
-    
 }
 
 #signin-container {
@@ -135,65 +153,71 @@ select {
 
 #journal {
     border: solid black 1px;
-    border-radius:1.9%;
+    border-radius: 1.9%;
     padding: 3px;
 }
 
 #signin-message {
-    background-color: #f8f9fa;
+    background-color: #F8F9FA;
     border-radius: 10px;
     padding: 3%;
-    border: #343a40;
+    border: #343A40;
     border-style: solid;
     border-width: 1px;
     align-self: center;
 }
 
-#register-message, #login-message {
-    background-color: #f8f9fa;
+#register-message,
+#login-message {
+    background-color: #F8F9FA;
     border-radius: 10px;
     padding: 1%;
-    border: #343a40;
+    border: #343A40;
     border-style: solid;
     border-width: 1px;
 }
 
 #welcome-message {
-    background-color: #f8f9fa;
+    background-color: #F8F9FA;
     padding: 1%;
-    border: #343a40;
+    border: #343A40;
     border-style: solid;
     border-width: 1px;
 }
 
-.form-signin, .form-register {
+.form-signin,
+.form-register {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
 }
 
-.form-signin .form-control, .form-register .form-control {
+.form-signin .form-control,
+.form-register .form-control {
     position: relative;
     box-sizing: border-box;
     height: auto;
     padding: 10px;
     font-size: 16px;
-    background-color: #f8f9fa;
+    background-color: #F8F9FA;
     border-radius: 10px;
 }
 
-.form-signin .form-control:focus, .form-register .form-control:focus {
+.form-signin .form-control:focus,
+.form-register .form-control:focus {
     z-index: 2;
 }
-  
-.form-signin input[type="username"], .form-register input[type="username"] {
+
+.form-signin input[type="username"],
+.form-register input[type="username"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
-  
-.form-signin input[type="password"], .form-register input[type="password"] {
+
+.form-signin input[type="password"],
+.form-register input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -220,7 +244,6 @@ select {
 
 #journal-title {
     margin-bottom: 45px;
-    
 }
 
 #erase-button {
@@ -228,7 +251,7 @@ select {
     height: 40px;
 }
 
-#erase-entry{
+#erase-entry {
     font-family: 'Special Elite', cursive;
     font-size: 1.1rem;
     color: red;
@@ -257,6 +280,7 @@ select {
         background-position: 20%;
     }
 }
+
 @media screen and (max-width: 660px) {
     #journal-background {
         margin: auto;
@@ -271,5 +295,5 @@ select {
     #entries {
         margin: auto;
         background-position: 20%;
-        }
+    }
 }
