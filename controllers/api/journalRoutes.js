@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Journal } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// Creates a new journal entry using provided information
 router.post('/', withAuth, async (req, res) => {
   try {
     const newJournal = await Journal.create({
@@ -15,6 +16,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+// Deletes a journal entry associated with a provided id as long as it was created by the current user
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const journalData = await Journal.destroy({
