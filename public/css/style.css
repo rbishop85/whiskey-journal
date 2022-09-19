@@ -51,22 +51,6 @@ html, body {
     opacity: .95;
     }
 
-#backgroundscheme2{
-    /* background-color: white;
-    color: black; */
-    /* opacity: 0.8; */
-    /* font-size: x-large; */
-}
-
-#backgroundscheme3{
-    /* background-color: white;
-    color: black; */
-    /* opacity: .8; */
-    /* font-size: x-large; */
-    /* padding-top: 5%; */
-    /* padding-left: 3%; */
-}
-
 #entries {
     background-color: white;
     border: solid black 1px;
