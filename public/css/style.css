@@ -1,7 +1,7 @@
 html, body {
     /* margin: 0; */
-    height: 100%;
-    width: 100%;
+    height: calc(100%);
+    width: calc(100%);    
 }
 
 #homepage-background {
@@ -30,11 +30,11 @@ html, body {
 
 #journal-background {
     height: fit-content;
-    height: calc(100% - 82px);
+    height: calc(100%);
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url(../images/whiskey-fb2.jpg);
+    background-image: url(../images/whisky_taste.jpg);
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
@@ -43,27 +43,11 @@ html, body {
 }
 
 #journalbackground-scehme {
-    background-color: #000;
+    background-color: white;
     padding-top: 5%;
-    color: #fff;
+    color: black;
     opacity: .8;
     }
-
-#backgroundscheme2{
-    background-color: #000;
-    color: #fff;
-    opacity: .8;
-    font-size: x-large;
-}
-
-#backgroundscheme3{
-    background-color: #000;
-    color: #fff;
-    opacity: .8;
-    font-size: x-large;
-    padding-top: 5%;
-    padding-left: 3%;
-}
 
 #entries {
     background-color: white;
@@ -252,22 +236,40 @@ select {
 
 #flavorWheelDisplay {
     display: block;
-    width: 500px;
-    height: 500px;
+    height: calc(100%);
+    width: 100%;
     margin-left: 25%;
 }
 
 @media screen and (max-width: 1340px) {
-    
+    #journal-background {
+        margin: auto;
+        background-position: 20%;
+    }
+
+    #flavorWheelDisplay {
+        margin: auto;
+        background-position: 20%;
+    }
+
     #entries {
         margin: auto;
         background-position: 20%;
     }
 }
 @media screen and (max-width: 660px) {
-    
-    #entries {
+    #journal-background {
         margin: auto;
         background-position: 20%;
     }
 
+    #flavorWheelDisplay {
+        margin: auto;
+        background-position: 20%;
+    }
+
+    #entries {
+        margin: auto;
+        background-position: 20%;
+        }
+}
