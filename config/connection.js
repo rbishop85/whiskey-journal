@@ -1,3 +1,4 @@
+// Connection details for initializng server
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
