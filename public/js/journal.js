@@ -25,8 +25,8 @@ const data = {
         "rgb(34, 139, 34, 0.6)", // peaty
         "rgb(255, 68, 0, 0.6)", // fruity
         "rgb(0, 255, 255, 0.6)", // feinty
-        "rgb(105, 90, 205, 0.5)", // winey
-        "rgb(128, 0, 0, 0.5)", // woody
+        "rgb(105, 90, 205, 0.6)", // winey
+        "rgb(128, 0, 0, 0.6)", // woody
         "rgb(172, 255, 47, 0.6)", // sulphury
       ],
       borderColor: [
