@@ -40,6 +40,7 @@ html, body {
     align-items: center;
     padding-top: 5%;
     font-size: larger;
+    font-family: 'Special Elite', cursive;
 }
 
 #journalbackground-scehme {
@@ -47,6 +48,7 @@ html, body {
     padding-top: 5%;
     color: black;
     opacity: .8;
+    font-family: 'Special Elite', cursive;
     }
 
 #entries {
