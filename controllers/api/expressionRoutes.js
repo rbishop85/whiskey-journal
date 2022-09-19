@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Expression } = require('../../models');
-const withAuth = require('../../utils/auth');
 
+// Get a list of all expressions associated with a provided distillery ID
 router.get('/list/:id', async (req, res) => {
 
     try {

@@ -1,3 +1,6 @@
+
+// Create a delete fetch request based on the data-id of the clicked delete button
+
 let capitalizeUsername = "";
 
 // Function to capitalize the first letter of a given username
@@ -11,6 +14,7 @@ capitalizeFirstLetter();
 document.getElementById('welcome-message').innerHTML = ("Welcome, " + capitalizeUsername + "!");
 
 // Function that pulls the data-id from a delete button and uses it to submit a "Delete" fetch request for that journal ID and then reloads the page
+
 const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');

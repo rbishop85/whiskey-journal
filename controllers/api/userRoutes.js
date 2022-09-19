@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-
+// Check to see if new username being registered already exists in the database
 router.get('/available/:username', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { username: req.params.username }
@@ -18,6 +18,7 @@ router.get('/available/:username', async (req, res) => {
   }
 });
 
+// Creates a new user using provided data and logs that user in
 router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
@@ -33,8 +34,10 @@ router.post('/', async (req, res) => {
   }
 });
 
+// Logs a user in using provided credentials
 router.post('/login', async (req, res) => {
   try {
+    // Verifies that provided user is in database
     const userData = await User.findOne({ where: { username: req.body.username } });
 
     if (!userData) {
@@ -44,6 +47,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    // Checks provided password against database user's password
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -53,6 +57,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
+    // Logs user in
     req.session.user_id = userData.id;
     req.session.logged_in = true;
     req.session.save(() => {
@@ -65,6 +70,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// Logs user out by destroying their session
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {

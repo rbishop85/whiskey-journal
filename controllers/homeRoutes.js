@@ -2,11 +2,11 @@ const router = require('express').Router();
 const { User, Journal, Expression, Distillery } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Prevent non logged in users from viewing the homepage
+// Load main page (only if logged in)
 router.get('/', withAuth, async (req, res) => {
 
   try {
-    // Find the logged in user based on the session ID
+    // Find the logged in user's data based on the session data
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [
@@ -28,8 +28,6 @@ router.get('/', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    console.log(user);
-
     res.render('homepage', {
       ...user,
       logged_in: true
@@ -39,8 +37,9 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+// Load login page
 router.get('/login', (req, res) => {
-  // If a session exists, redirect the request to the homepage
+  // If a session already exists, redirect the request to the homepage
   if (req.session.logged_in) {
     res.redirect('/');
     return;
@@ -49,8 +48,9 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+// Load registration page
 router.get('/register', (req, res) => {
-  // If a session exists, redirect the request to the homepage
+  // If a session already exists, redirect the request to the homepage
   if (req.session.logged_in) {
     res.redirect('/');
     return;
@@ -59,8 +59,10 @@ router.get('/register', (req, res) => {
   res.render('register');
 });
 
+// Load individual journal page (only if logged in)
 router.get('/journal/:id', withAuth, async (req, res) => {
   try {
+    // Find individual journal entry's data by the supplied journal id
     const journalData = await Journal.findByPk(req.params.id, {
       include: [
         {
@@ -78,8 +80,6 @@ router.get('/journal/:id', withAuth, async (req, res) => {
 
     const journal = journalData.get({ plain: true });
 
-    console.log(journal);
-
     res.render('journal', {
       ...journal,
       logged_in: req.session.logged_in
@@ -89,8 +89,10 @@ router.get('/journal/:id', withAuth, async (req, res) => {
   }
 });
 
+// Load new journal entry page (only if logged in)
 router.get('/newJournal', withAuth, async (req, res) => {
   try {
+    // Pass the page a list of all available distilleries
     const distilleryData = await Distillery.findAll();
 
     const distilleries = distilleryData.map((distillery) => distillery.get({ plain: true }));

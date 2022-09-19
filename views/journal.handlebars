@@ -1,4 +1,4 @@
-
+{{!-- Create variables from provided data to be used by script --}}
 <script>
   const winey =
   {{winey}}; const woody =
@@ -18,6 +18,7 @@
         <div class="row">
           <div class="col-12 col-md-3 col-sm-12 col-xl-3 colOne">
 
+            {{!-- Display Info about the expression --}}
             <div class="mb-3" id="brand">
               {{expression.name}}
 
@@ -58,6 +59,7 @@
 
             {{!-- <div class="card bg-light mb-3" style="max-width: 1000px;"> --}}
 
+              {{!-- JS generated Flavor Wheel will be inserted here --}}
               <h3 class="card-header" id="whisky-wheel">
 
                 <container class="container" id="flavorWheelDisplay">
@@ -73,6 +75,7 @@
           </div>
 
           <div class="mb-3" style="max-width: 1000px;">
+            {{!-- Any notes from the user will be displayed here --}}
             <h5 class="col-4 Notes">Notes:</h5>
           </div>
           <div class="col-12 mb-3" tyle="max-width: 1000px" id="backgroundscheme3">
@@ -83,5 +86,6 @@
     </div>
   </div>
 </div>
+{{!-- CDN resource for Chart.js used to generate the flavor wheel --}}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/js/journal.js"></script>
