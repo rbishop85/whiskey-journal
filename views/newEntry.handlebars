@@ -1,4 +1,4 @@
-<div id="homepage-background">
+<div id="newEntry-background">
   <div class="row justify-content-center" id="new-entry-row">
     <div class="card text-center col-10">
       <div class="card-body">
@@ -9,7 +9,7 @@
           </div>
           <div class="col-lg-8 col-sm-12" id="dropdown-group">
             {{!-- Distillery dropdown, generated from provided list of available distilleries --}}
-            <select id="distilleryList" onchange="loadExpressions()">
+            <select id="distilleryList" class="mw-100" onchange="loadExpressions()">
               <option value="" selected disabled hidden>Select Distillery</option>
             {{#each distilleries}}
               <option value="{{id}}">{{name}}</option>
